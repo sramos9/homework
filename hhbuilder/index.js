@@ -1,13 +1,9 @@
 //Validate data entry (age is required and > 0, relationship is required)
-
-
+const target = document.querySelector("builder");
+const myDiv = document.createElement("div");
+myDiv.innerHTML = 'some text goes here demo';
 
 const validateEntry = ()=> {
-
-  var target = document.querySelector("builder");
-  var div = document.createElement("div");
-  div.innerHTML = 'some text goes here demo';
-
   var n, text;
 
    n = document.getElementsByTagName("age").value;
@@ -20,7 +16,7 @@ const validateEntry = ()=> {
     } else {
         text = "Input OK";
     };
-    target.parentNode.insertBefore(div, target.nextSibling).innerHTML = text;
+    target.parentNode.insertBefore(myDiv, target.nextSibling).innerHTML = text;
 
   //document.getElementById("target").innerHTML = text;
   //div.innerHTML = text;
